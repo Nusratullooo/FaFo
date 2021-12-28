@@ -1,0 +1,280 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="FaFo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <title>FaFo - Fast Food Restaurant</title>
+    <link rel="icon" href="{% static 'assets/images/tab.png' %}" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap-reboot.min.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/slick-theme.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/jquery.timepicker.min.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.min.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.min.css' %}" type="text/css" media="all"/>
+    <link rel='stylesheet' href="{% static 'assets/css/icofont.min.css' %}" type="text/css" media="all"/>
+    <link rel='stylesheet' href="{% static 'assets/css/flaticon.css' %}" type="text/css" media="all"/>
+    <link rel='stylesheet' href="{% static 'assets/css/settings.css' %}" type="text/css" media="all"/>
+    <link rel='stylesheet' href="{% static 'assets/css/layers.css' %}" type="text/css" media="all"/>
+    <link rel='stylesheet' href="{% static 'assets/css/navigation.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" type="text/css" media="all"/>
+</head>
+
+<body>
+
+<div class="preloader bg-main">
+    <div class="preloader-wrapper">
+        <div class="preloader-grid">
+            <div class="preloader-grid-item preloader-grid-item-1"></div>
+            <div class="preloader-grid-item preloader-grid-item-2"></div>
+            <div class="preloader-grid-item preloader-grid-item-3"></div>
+            <div class="preloader-grid-item preloader-grid-item-4"></div>
+            <div class="preloader-grid-item preloader-grid-item-5"></div>
+            <div class="preloader-grid-item preloader-grid-item-6"></div>
+            <div class="preloader-grid-item preloader-grid-item-7"></div>
+            <div class="preloader-grid-item preloader-grid-item-8"></div>
+            <div class="preloader-grid-item preloader-grid-item-9"></div>
+        </div>
+    </div>
+</div>
+
+<div class="topbar bg-main">
+    <div class="container">
+        <div class="topbar-inner">
+            <div class="topbar-item">
+                <div class="topbar-right d-flex flex-wrap topbar-right justify-content-center justify-content-md-start full-height">
+                    <div class="topbar-right-item topbar-padding color-white">
+                        <i class="flaticon-clock"></i>
+                        Sunday Closed
+                    </div>
+                    <div class="topbar-right-item topbar-padding color-white">
+                        <i class="flaticon-placeholder-1"></i>
+                        50 Yangi Shahar Street, Tashkent
+                    </div>
+                    <div class="topbar-right-item topbar-padding color-white">
+                        <i class="flaticon-smartphone-call"></i>
+                        <a href="tel:998935417882" class="color-white">+998 (93) 541-78-82</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="fixed-top">
+        <div class="navbar-area navbar-dark">
+            <div class="mobile-nav">
+                <a href="{% url 'home' %}" class="mobile-brand">
+                    <img src="{% static 'assets/images/logo.png' %}" alt="logo" class="blue-logo">
+                </a>
+            </div>
+            <div class="main-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="{% url 'home' %}">
+                            <img src="{% static 'assets/images/logo.png' %}" alt="logo" class="logo">
+                        </a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="{% url 'home' %}" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'menu' %}" class="nav-link">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle active">Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="{% url 'about' %}" class="nav-link">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="{% url 'team' %}" class="nav-link">Team</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'news' %}" class="nav-link">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'contact' %}" class="nav-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="header-bg header-bg-page">
+    <div class="header-padding position-relative">
+        <div class="header-page-shape">
+            <div class="header-page-shape-item">
+                <img src="{% static 'assets/images/header-shape-1.png' %}" alt="shape">
+            </div>
+            <div class="header-page-shape-item">
+                <img src="{% static 'assets/images/header-shape-2.png' %}" alt="shape">
+            </div>
+            <div class="header-page-shape-item">
+                <img src="{% static 'assets/images/header-shape-3.png' %}" alt="shape">
+            </div>
+            <div class="header-page-shape-item">
+                <img src="{% static 'assets/images/header-shape-1.png' %}" alt="shape">
+            </div>
+            <div class="header-page-shape-item">
+
+            </div>
+            <div class="header-page-shape-item">
+                <img src="{% static 'assets/images/header-shape-1.png' %}" alt="shape">
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="header-page-content">
+                <h1>Team</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Team</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="team-section p-tb-100 bg-black">
+    <div class="container">
+        <div class="row">
+            {% for rs in team %}
+            <div class="col-sm-12 col-md-6 col-lg-3 pb-30">
+                <div class="team-item team-item-light">
+                    <div class="team-thumb">
+                        <img src="{{ rs.image.url }}" alt="client">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="carousel-name"><a href="{% url 'team_detail' rs.id %}">{{ rs.name }}</a></h3>
+                        <h4 class="carousel-designation">{{ rs.work }}</h4>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="blog-pagination pagination-center">
+               {% include 'paginator.html' with page=team %}
+        </div>
+    </div>
+</section>
+
+<footer class="bg-overlay-1 bg-black">
+    <div class="footer-upper pt-100 pb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-2 order-2 order-lg-1">
+                    <div class="footer-content-list footer-content-item">
+                        <div class="footer-content-title">
+                            <h3>Our Offer</h3>
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap flex-lg-nowrap desk-pad-right-30">
+                            <ul class="footer-details footer-list">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'menu' %}">Menu</a></li>
+                                <li><a href="{% url 'about' %}">About us</a></li>
+                                <li><a href="{% url 'team' %}">Team</a></li>
+                                <li><a href="{% url 'news' %}">News</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 order-1 order-lg-2">
+                    <div class="footer-content-item text-start text-lg-center">
+                        <div class="footer-logo">
+                            <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %}" alt="logo"></a>
+                        </div>
+                        <ul class="footer-details footer-address">
+                            <li>50 Yangi Shahar Street, Tashkent</li>
+                            <li><span>Phone:</span><a href="tel:998935417882">+998 (93) 541-78-82</a></li>
+                            <li><span>Email: </span><span>&nbsp;burixonzoda.nusratullo@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 order-3">
+                    <div class="footer-content-list footer-content-item desk-pad-left-30">
+                        <div class="footer-content-title">
+                            <h3>Open Hours</h3>
+                        </div>
+                        <ul class="footer-details footer-time">
+                            <li>Saturday: <span>08:00 - 23.00</span></li>
+                            <li>Sunday: <span>CLOSED</span></li>
+                            <li>Monday: <span>08:00 - 21.00</span></li>
+                            <li>Tuesday: <span>09:00 - 23.00</span></li>
+                            <li>Wednesday: <span>08:00 - 23.00</span></li>
+                            <li>Thursday: <span>08:00 - 23.00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-lower">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="footer-lower-item">
+                    <div class="footer-copyright-text footer-copyright-text-red">
+                        <p>Copyright © 2021 | All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll-top" id="scrolltop">
+    <div class="scroll-top-inner">
+        <span><i class="flaticon-up-arrow"></i></span>
+    </div>
+</div>
+
+<script src="{% static 'assets/js/jquery-3.5.1.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery-ui.js' %}"></script>
+<script src="{% static 'assets/js/jquery.timepicker.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/slick.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'assets/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'assets/js/form-validator.min.js' %}"></script>
+<script src="{% static 'assets/js/contact-form-script.js' %}"></script>
+<script src="{% static 'assets/js/jquery.meanmenu.min.js' %}"></script>
+<script src="{% static 'assets/js/script.js' %}"></script>
+
+</body>
+
+</html>
