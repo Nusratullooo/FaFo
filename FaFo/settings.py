@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-uc!$(*p_p3y&ei^$1e1+c6jr10sv71t7dks(c%donaq%u9l^w-
 
 DEBUG = True
 
-ALLOWED_HOSTS = [fafo.herokuapp.com]
+ALLOWED_HOSTS = ['fafo.herokuapp.com', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
